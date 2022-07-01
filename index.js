@@ -26,6 +26,18 @@ const monster = {
     diceCount: 1
 }
 
+/*
+Challenge
+1. Create a method called getCharacterHtml that performs the 
+   same tasks as our current renderCharacter function.
+2. Create two new instances of Character. One for a hero, 
+   called "wizard", and one for a monster, called "orc". 
+   Render both of them on the page.
+3. Delete both the old renderCharacter function and the two 
+   lines of code at the bottom of the page which invoke that 
+   function.
+*/
+
 function Character(data) {
     this.elementId = data.elementId;
     this.name = data.name;
