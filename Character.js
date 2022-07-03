@@ -1,4 +1,4 @@
-import {getDiceRollArray} from '/utils.js'
+import {getDiceRollArray} from './utils.js'
 
 function Character(data) {
     Object.assign(this, data)
@@ -21,8 +21,8 @@ function Character(data) {
                 <div class="dice-container">
                     ${diceHtml}
                 </div>
-            </div>`;
+            </div>`
     }  
 }
 
-export {Character}
+export default Character
