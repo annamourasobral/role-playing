@@ -125,7 +125,7 @@ main {
     width:100%;
     position: absolute;
     bottom:0;
-    left:0px;
+    left:0;
     right:0;
     background: #000721;
     display: flex;
@@ -142,21 +142,20 @@ main {
 }
 
 .dice, .placeholder-dice{
-    height:5.5vh;
-    width:5.5vh;
+    height:30px;
+    width:30px;
     background: #fff;   
     border-radius: 5px;
     border:1px solid #666;
     color:#000721;
     text-align: center;
-    line-height: 6vh;
 }
 
 @media(min-width:550px){
 .dice-container .dice, .dice-container .placeholder-dice{
-    height:10vh;
-    width:10vh;
-    line-height: 10.5vh;
+    height:5vh;
+    width:5vh;
+    line-height: 5.5vh;
 }
 }
 
