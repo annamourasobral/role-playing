@@ -14,14 +14,18 @@ function attack() {
     wizard.takeDamage(monster.currentDiceScore)
     monster.takeDamage(wizard.currentDiceScore)
     render()
-
-    if (wizard.dead) {
+    
+    if(wizard.dead){
         endGame()
-    } else if (monster.dead) {
-        if (monstersArray.length > 0) {
-            monster = getNewMonster()
-            render()
-        } else {
+    }
+    else if(monster.dead){
+        if(monstersArray.length > 0){
+            setTimeout(()=>{
+                monster = getNewMonster()
+                render()
+            },1500)
+        }
+        else{
             endGame()
         }
     }
@@ -34,13 +38,15 @@ function endGame() {
             "The Orc is Victorious"
 
     const endEmoji = wizard.health > 0 ? "🔮" : "☠️"
-    document.body.innerHTML = `
-        <div class="end-game">
-            <h2>Game Over</h2> 
-            <h3>${endMessage}</h3>
-            <p class="end-emoji">${endEmoji}</p>
-        </div>
-        `
+        setTimeout(()=>{
+            document.body.innerHTML = `
+                <div class="end-game">
+                    <h2>Game Over</h2> 
+                    <h3>${endMessage}</h3>
+                    <p class="end-emoji">${endEmoji}</p>
+                </div>
+                `
+        }, 1500)
 }
 
 document.getElementById("attack-button").addEventListener('click', attack)
