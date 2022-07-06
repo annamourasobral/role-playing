@@ -5,11 +5,13 @@ This a project in Next-level JavaScript module of Frontend Career Path from [Scr
 ## Here I practiced
 
 - Object destructuring;
-- .map(), .join(), .fill() methods;
+- .map(), .join(), .fill(), .reduce() and setTimeout() methods;
 - Returning a function inside a function;
 - Creating new arrays with the Array constructor;
 - Constructor functions;
 - The "this" keyword;
 - Methods on constructor functions;
 - Object.assign;
-- Import/Export
+- Import/Export;
+- The ternary operator;
+- Arrow functions
